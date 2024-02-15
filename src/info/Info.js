@@ -2,10 +2,14 @@ import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
+import mock4 from "../img/mock4.png"
 import { faInstagram, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 
 export let colors = ["#F5EE77", "#E16642"];
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
 export const info = {
     firstName: "Enrique",
@@ -22,9 +26,10 @@ export const info = {
         },
         {
             emoji: '🌍',
-            text: 'Based in Spain'
+            text: 'Based in Garrucha, Almería (Spain)'
         },
         {
+            link: "https://www.18techs.com/",
             emoji: "💼",
             text: "Web Developer at 18Techs"
         },
@@ -51,7 +56,7 @@ export const info = {
         }
 
     ],
-    bio: "Hello! My name is Enrique and I’m a Web Developer at 18Techs. I honed my skills in Full Stack Development at the Socratech School of New Technologies and further expanded my knowledge through the ‘Modern Web Application Development’ course offered by the University of Helsinki. When I’m not coding, you can find me enjoying long walks on the beach. I’m a firm believer that artificial intelligence will play a significant role in our future, perhaps even ruling us one day. If you’re looking for a developer who is always on the cutting edge of technology, then look no further. Hire me! This portfolio is inspired by the work of Payton Pierce.",
+    bio: "Hello! My name is Enrique and I’m a Web Developer at 18Techs. I honed my skills in Full Stack Development at the Socratech School of New Technologies and further expanded my knowledge through the ‘Modern Web Application Development’ course offered by the University of Helsinki. When I’m not coding, you can find me enjoying long walks on the beach. I’m a firm believer that artificial intelligence will play a significant role in our future, perhaps even ruling us one day. If you’re looking for a developer who is always on the cutting edge of technology, then look no further. Hire me! This portfolio was inspired by the work of Payton Pierce.",
 
     skills:
         {
@@ -80,7 +85,7 @@ export const info = {
 
     portfolio: [ 
         {
-            title: "Project 1",
+            title: "Ascendio",
             live: "https://youtu.be/B4JPTwi-Dq4?si=A0VQqSkDROzKM8oV",
             source: "https://github.com/Agnielli/Ascendio",
             image: mock1
@@ -92,8 +97,14 @@ export const info = {
             image: mock2
         },
         {
-            title: "Pedro Camacho (UnderConstruction)",
+            title: "Pedro Camacho",
             image: mock3
+        },
+        {
+            title: "Portfolio",
+            live: "#",
+            source: "https://github.com/Agnielli/portfolioes",
+            image: mock4
         }
     ]
 }
