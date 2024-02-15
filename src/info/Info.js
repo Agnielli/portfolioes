@@ -2,20 +2,10 @@ import self from "../img/self.png"
 import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 
 export let colors = ["#F5EE77", "#E16642"];
-
-
-/*
-So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
-that might not be obvious right off the bat :) I recommend looking at the template example live using "npm start" to get an idea
-of what each of the values mean.
- */
 
 export const info = {
     firstName: "Enrique",
@@ -28,11 +18,11 @@ export const info = {
     miniBio: [
         {
             emoji: '☕',
-            text: 'fueled by tea'
+            text: 'Fueled by tea'
         },
         {
             emoji: '🌍',
-            text: 'based in Spain'
+            text: 'Based in Spain'
         },
         {
             emoji: "💼",
@@ -86,14 +76,13 @@ export const info = {
             label: 'to serve',
             emoji: '⭐️ 🔆'
         }
-// Same as above, change the emojis to match / relate to your hobbies or interests.
-// You can also remove the emojis if you'd like, I just think they look cute :P
     ],
-    portfolio: [ // This is where your portfolio projects will be detailed
+
+    portfolio: [ 
         {
             title: "Project 1",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+            live: "https://youtu.be/B4JPTwi-Dq4?si=A0VQqSkDROzKM8oV",
+            source: "https://github.com/Agnielli/Ascendio",
             image: mock1
         },
         {
@@ -103,9 +92,7 @@ export const info = {
             image: mock2
         },
         {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
+            title: "Pedro Camacho (UnderConstruction)",
             image: mock3
         }
     ]

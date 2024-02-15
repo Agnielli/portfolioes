@@ -1,6 +1,8 @@
 import React from 'react';
 import IconLink from "./IconLink";
 import {Box} from "@mui/material";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDesktop } from '@fortawesome/free-solid-svg-icons'
 
 function PortfolioBlock(props) {
    const {image, live, source, title} = props;
@@ -11,10 +13,11 @@ function PortfolioBlock(props) {
          <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
               alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
             <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-               <IconLink link={live} title={'Demo'} icon={'fa fa-safari'}/>
+               <IconLink link={live} title={'Demo'} />
+               {/* icon={faDesktop} */}
             </Box>
             <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-               <IconLink link={source} title={'Source Code'} icon={'fa fa-code'}/>
+               <IconLink link={source} title={'Source Code'}/>
             </Box>
          </Box>
       </Box>
