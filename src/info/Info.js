@@ -29,13 +29,13 @@ export const info = {
             text: 'Based in Garrucha, Almería (Spain)'
         },
         {
+            emoji: "📧",
+            text: "quiquesaba@gmail.com"
+        },
+        {
             link: "https://www.18techs.com/",
             emoji: "💼",
             text: "Web Developer at 18Techs"
-        },
-        {
-            emoji: "📧",
-            text: "quiquesaba@gmail.com"
         }
     ],
     socials: [

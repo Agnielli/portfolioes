@@ -63,10 +63,10 @@ export default function Home() {
                {info.miniBio.map((bio, index) => (
                   <EmojiBullet 
                      key={index} 
+                     id={index} 
                      emoji={bio.emoji} 
                      text={bio.text}
                      link={bio.link}
-                     handleShow={handleShow}
                   />
                ))}
                <Box component={'li'} fontSize={'1rem'} lineHeight={1.5} style={{cursor: 'default'}}>
