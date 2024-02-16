@@ -91,7 +91,7 @@ export const info = {
             image: mock1
         },
         {
-            title: "Gastro Qality",
+            title: "Gastro Quality",
             live: "https://www.youtube.com/watch?v=QvekfeNYslM",
             source: "https://github.com/Agnielli/Restaurants-Project",
             image: mock2
@@ -102,8 +102,8 @@ export const info = {
         },
         {
             title: "Portfolio",
-            live: "#",
-            source: "https://portfolioes.vercel.app/",
+            live: "https://portfolioes.vercel.app/",
+            source: "https://github.com/Agnielli/portfolioes",
             image: mock4
         }
     ]

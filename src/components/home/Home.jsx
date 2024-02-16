@@ -73,7 +73,7 @@ export default function Home() {
                   <Box component={'span'} 
                      aria-label="cheese"
                      role="img"
-                     mr={{xs: '0.5rem', md: '1rem'}} fontSize={'1.5rem'}>🖥️</Box> 
+                     mr={{xs: '0.5rem', md: '1rem'}} fontSize={'1.5rem'}>💬</Box> 
                      <a href="#" onClick={(e) => { e.preventDefault(); handleShow(); }}>
                         Send me a message
                      </a>
@@ -104,6 +104,7 @@ export default function Home() {
                 name="email"
                 autoFocus
                 as="textarea" rows={1}
+                style={{ resize: 'none', overflow: 'auto' }}
               />
             </Form.Group>
             <Form.Group
