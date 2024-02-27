@@ -3,6 +3,7 @@ import mock1 from "../img/mock1.png"
 import mock2 from "../img/mock2.png"
 import mock3 from "../img/mock3.png"
 import mock4 from "../img/mock4.png"
+import mock5 from "../img/mock5.png"
 import { faInstagram, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 
@@ -97,14 +98,20 @@ export const info = {
             image: mock2
         },
         {
-            title: "Pedro Camacho",
-            image: mock3
-        },
-        {
             title: "Portfolio",
             live: "https://portfolioes.vercel.app/",
             source: "https://github.com/Agnielli/portfolioes",
+            image: mock3
+        },
+        {
+            title: "Arkanoid",
+            live: "https://arkanoid-sable.vercel.app/",
+            source: "https://github.com/Agnielli/Arkanoid",
             image: mock4
+        },
+        {
+            title: "Pedro Camacho",
+            image: mock5
         }
     ]
 }
