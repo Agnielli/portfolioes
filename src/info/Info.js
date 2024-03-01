@@ -99,6 +99,12 @@ export const info = {
             image: mock2
         },
         {
+            title: "WeatherApp",
+            live: "https://weather-app-wpir.vercel.app/",
+            source: "https://github.com/Agnielli/WeatherApp",
+            image: mock6
+        },
+        {
             title: "Portfolio",
             live: "https://portfolioes.vercel.app/",
             source: "https://github.com/Agnielli/portfolioes",
@@ -109,12 +115,6 @@ export const info = {
             live: "https://arkanoid-sable.vercel.app/",
             source: "https://github.com/Agnielli/Arkanoid",
             image: mock4
-        },
-        {
-            title: "WeatherApp",
-            live: "https://weather-app-wpir.vercel.app/",
-            source: "https://github.com/Agnielli/WeatherApp",
-            image: mock6
         },
         {
             title: "Pedro Camacho",
