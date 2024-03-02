@@ -1,10 +1,10 @@
 import self from "../img/self.png"
-import mock1 from "../img/mock1.svg"
-import mock2 from "../img/mock2.svg"
-import mock3 from "../img/mock3.svg"
-import mock4 from "../img/mock4.svg"
-import mock5 from "../img/mock5.svg"
-import mock6 from "../img/mock6.svg"
+import mock1 from "../img/mock1.png"
+import mock2 from "../img/mock2.png"
+import mock3 from "../img/mock3.png"
+import mock4 from "../img/mock4.png"
+import mock5 from "../img/mock5.png"
+import mock6 from "../img/mock6.png"
 import { faInstagram, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 
