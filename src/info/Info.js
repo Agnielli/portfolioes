@@ -5,7 +5,9 @@ import mock3 from "../img/mock3.avif"
 import mock4 from "../img/mock4.avif"
 import mock5 from "../img/mock5.avif"
 import mock6 from "../img/mock6.avif"
-import { faInstagram, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import mock7 from "../img/mock7.avif"
+import { faInstagram, faGithub, faLinkedin, faReact, faNodeJs, faHtml5, faBootstrap} from '@fortawesome/free-brands-svg-icons'
+import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
 
 export let colors = ["#F5EE77", "#E16642"];
@@ -58,12 +60,12 @@ export const info = {
         }
 
     ],
-    bio: "Hello! My name is Enrique and I’m a Web Developer at 18Techs. I honed my skills in Full Stack Development at the Socratech School of New Technologies and further expanded my knowledge through the ‘Modern Web Application Development’ course offered by the University of Helsinki. When I’m not coding, you can find me enjoying long walks on the beach. I’m a firm believer that artificial intelligence will play a significant role in our future, perhaps even ruling us one day. If you’re looking for a developer who is always on the cutting edge of technology, then look no further. Hire me! This portfolio was inspired by the work of Payton Pierce.",
+    bio: "Hello! My name is Enrique and I’m a Software Developer at 18Techs a company from Atlanta, GA (USA). I honed my skills in Full Stack Development at the Socratech School of New Technologies and further expanded my knowledge through the ‘Modern Web Application Development’ course offered by the University of Helsinki. Among my licenses and certifications are: JavaScript Programming from Fundación Telefónica, English for IT B2 from Cisco Networking Academy, Mobile App Development Course from the Complutense University of Madrid, Computer Science 101 from Stanford University Online and CS50 Introduction to Computer Science from Harvard University Online. When I’m not coding, you can find me enjoying long walks on the beach. I’m a firm believer that artificial intelligence will play a significant role in our future, perhaps even ruling us one day. If you’re looking for a developer who is always on the cutting edge of technology, then look no further. Hire me! This portfolio was inspired by the work of Payton Pierce.",
 
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'express', 'nodejs', 'bootstrap', 'html5', 'css3', 'mySQL'],
-            exposedTo: ['react native', 'PowerBI', 'mongoDB', 'figma', 'adobe photoshop']
+            proficientWith: ['JavaScript', 'React', 'Git', 'Github', 'Express', 'Nodejs', 'Bootstrap', 'HTML5', 'CSS3', 'mySQL'],
+            exposedTo: ['React Native', 'Astro', 'Tailwind', 'PowerBI', 'MongoDB', 'Figma', 'Adobe Photoshop', 'C']
         }
     ,
     hobbies: [
@@ -88,37 +90,50 @@ export const info = {
     portfolio: [ 
         {
             title: "Ascendio",
+            techs: ["React", "NodeJS", "MySQL"],
             live: "https://youtu.be/B4JPTwi-Dq4?si=A0VQqSkDROzKM8oV",
             source: "https://github.com/Agnielli/Ascendio",
             image: mock1
         },
         {
             title: "Gastro Quality",
+            techs: ["NodeJS", "HTML", "Bootstrap"],
             live: "https://www.youtube.com/watch?v=QvekfeNYslM",
             source: "https://github.com/Agnielli/Restaurants-Project",
             image: mock2
         },
         {
             title: "WeatherApp",
+            techs: ["React", "HTML", "Geist"],
             live: "https://weather-app-wpir.vercel.app/",
             source: "https://github.com/Agnielli/WeatherApp",
             image: mock6
         },
         {
+            title: "Tesla Landing Clon",
+            techs: ["Astro", "HTML", "Tailwind"],
+            live: "https://tesla-landing-clon.vercel.app/",
+            source: "https://github.com/Agnielli/tesla-landing-clon",
+            image: mock7
+        },
+        {
             title: "Portfolio",
+            techs: ["React", "HTML", "MaterialUi"],
             live: "https://portfolioes.vercel.app/",
             source: "https://github.com/Agnielli/portfolioes",
             image: mock3
         },
         {
             title: "Arkanoid",
+            techs: ["JavaScript", "HTML", "CSS"],
             live: "https://arkanoid-sable.vercel.app/",
             source: "https://github.com/Agnielli/Arkanoid",
             image: mock4
         },
         {
             title: "Pedro Camacho",
+            techs: ["JavaScript", "HTML", "CSS"],
             image: mock5
         }
-    ]
+    ]    
 }
