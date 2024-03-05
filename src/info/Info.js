@@ -60,12 +60,12 @@ export const info = {
         }
 
     ],
-    bio: "Hello! My name is Enrique and I’m a Software Developer at 18Techs a company from Atlanta, GA (USA). I honed my skills in Full Stack Development at the Socratech School of New Technologies and further expanded my knowledge through the ‘Modern Web Application Development’ course offered by the University of Helsinki. Among my licenses and certifications are: JavaScript Programming from Fundación Telefónica, English for IT B2 from Cisco Networking Academy, Mobile App Development Course from the Complutense University of Madrid, Computer Science 101 from Stanford University Online and CS50 Introduction to Computer Science from Harvard University Online. When I’m not coding, you can find me enjoying long walks on the beach. I’m a firm believer that artificial intelligence will play a significant role in our future, perhaps even ruling us one day. If you’re looking for a developer who is always on the cutting edge of technology, then look no further. Hire me! This portfolio was inspired by the work of Payton Pierce.",
+    bio: "Hello! My name is Enrique and I’m a Software Developer at 18Techs a company from Atlanta, GA (USA). I honed my skills in Full Stack Development at the Socratech School of New Technologies and further expanded my knowledge through the ‘Modern Web Application Development’ course offered by the University of Helsinki. Among my licenses and certifications are - JavaScript Programming from Fundación Telefónica - English for IT B2 from Cisco Networking Academy - Mobile App Development Course from the Complutense University of Madrid - Computer Science 101 from Stanford University Online - CS50 Introduction to Computer Science from Harvard University Online. When I’m not coding, you can find me enjoying long walks on the beach and enjoying time with my family while volunteering in the community. I’m a firm believer that artificial intelligence will play a significant role in our future, perhaps even ruling us one day. If you’re looking for a developer who is always on the cutting edge of technology, then look no further. Hire me! Thank you, Payton Pierce, for inspiring my work and teaching me so much.",
 
     skills:
         {
             proficientWith: ['JavaScript', 'React', 'Git', 'Github', 'Express', 'Nodejs', 'Bootstrap', 'HTML5', 'CSS3', 'mySQL'],
-            exposedTo: ['React Native', 'Astro', 'Tailwind', 'PowerBI', 'MongoDB', 'Figma', 'Adobe Photoshop', 'C']
+            exposedTo: ['React Native', 'Astro', 'Tailwind', 'PowerBI', 'MongoDB', 'Figma', 'Adobe Photoshop', 'C', 'Geist', 'Material-Ui']
         }
     ,
     hobbies: [
