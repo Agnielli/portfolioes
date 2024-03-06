@@ -130,10 +130,10 @@ export const info = {
             source: "https://github.com/Agnielli/Arkanoid",
             image: mock4
         },
-        {
-            title: "Pedro Camacho",
-            techs: ["JavaScript", "HTML", "CSS"],
-            image: mock5
-        }
+        // {
+        //     title: "Pedro Camacho",
+        //     techs: ["JavaScript", "HTML", "CSS"],
+        //     image: mock5
+        // }
     ]    
 }
