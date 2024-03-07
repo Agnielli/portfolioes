@@ -1,6 +1,6 @@
 import React from 'react';
 import IconLink from "./IconLink";
-import {Box} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import { faReact, faNodeJs, faHtml5, faBootstrap, faJs, faCss3Alt} from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,7 +9,7 @@ import astro from '../../img/astro.svg'
 import geist from '../../img/geist.png'
 import materialUi from '../../img/material-ui.png'
 
-function PortfolioBlock({image, live, source, title, darkMode, techs}) {
+function PortfolioBlock({image, live, source, title, darkMode, setDarkMode, techs}) {
    
    const techIcons = {
       "React": faReact,
@@ -37,40 +37,74 @@ function PortfolioBlock({image, live, source, title, darkMode, techs}) {
                     <Box display="flex" justifyContent="center">
                         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                               {techsArray && techsArray.map((tech, index) => (
-                                 <li key={index} style={{ display: 'inline-block', marginRight: index < techsArray.length - 1 ? '13px' : '0',  verticalAlign: 'middle',  lineHeight: '1.5em' }}>
+                                 <span key={index} style={{ display: 'inline-block', marginRight: index < techsArray.length - 1 ? '13px' : '0',  verticalAlign: 'middle',  lineHeight: '1.5em' }}>
                                     {typeof techIcons[tech] === 'object' ? (
-                              <FontAwesomeIcon icon={techIcons[tech]} style={{ width: '1em', height: '1em', verticalAlign: 'middle' }}/>
-                              ) : (
-                                    <img src={techIcons[tech]} alt={tech} style={{ width: '1em', height: '1em', verticalAlign: 'middle' }} />
-                              )}
-                              <span style={{ verticalAlign: 'middle', marginLeft: '5px' }}>{tech}</span>
-                                 </li>
-                              ))}
+                                       <FontAwesomeIcon icon={techIcons[tech]} style={{ width: '1em', height: '1em', verticalAlign: 'middle' }}/>
+                                    ) : (
+                                          <img src={techIcons[tech]} alt={tech} style={{ width: '1em', height: '1em', verticalAlign: 'middle' }} />
+                                    )}
+                                    <span style={{ verticalAlign: 'middle', marginLeft: '5px' }}>{tech}</span>
+                                    </span>
+                                    ))}
                         </ul>
                      </Box>
                  :
                  <Box display="flex" justifyContent="center">
                      <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                            {techsArray && techsArray.map((tech, index) => (
-                              <li key={index} style={{ display: 'inline-block', marginRight: index < techsArray.length - 1 ? '13px' : '0',  verticalAlign: 'middle',  lineHeight: '1.5em' }}>
+                              <span key={index} style={{ display: 'inline-block', marginRight: index < techsArray.length - 1 ? '13px' : '0',  verticalAlign: 'middle',  lineHeight: '1.5em' }}>
                                  {typeof techIcons[tech] === 'object' ? (
-                           <FontAwesomeIcon icon={techIcons[tech]} style={{ width: '1em', height: '1em', verticalAlign: 'middle' }}/>
-                           ) : (
-                                 <img src={techIcons[tech]} alt={tech} style={{ filter: 'invert(100%)', width: '1em', height: '1em', verticalAlign: 'middle' }} />
-                           )}
-                           <span style={{ verticalAlign: 'middle', marginLeft: '5px', color: 'white' }}>{tech}</span>
-                              </li>
+                                 <FontAwesomeIcon icon={techIcons[tech]} style={{ width: '1em', height: '1em', verticalAlign: 'middle' }}/>
+                                 ) : (
+                                       <img src={techIcons[tech]} alt={tech} style={{ filter: 'invert(100%)', width: '1em', height: '1em', verticalAlign: 'middle' }} />
+                                 )}
+                                 <span style={{ verticalAlign: 'middle', marginLeft: '5px', color: 'white' }}>{tech}</span>
+                                    </span>
                            ))}
                      </ul>
                   </Box>
                  }
                  
-                 <div style={{ textAlign: 'center', marginTop: '0' }}>
-                     <Box px={1.2} py={0.5} border={darkMode ? '2px solid white' : '2px solid black'} borderRadius={'12px'} style={{ display: 'inline-block', marginRight: '10px' }}>
-                        🖥️<IconLink link={live} title={'Demo'} />
+                 <div style={{ textAlign: 'center', marginTop: '0' }} >
+                     <Box px={1.2} py={0.5} style={{ display: 'inline-block', marginRight: '10px' }}
+                        sx={{
+                           transition: 'transform 0.3s ease-in-out',
+                           border: darkMode ? '2px solid white' : '2px solid black',
+                           borderRadius: '12px',
+                           display: 'inline-block',
+                        '&:hover, &:hover a': {
+                           bgcolor: darkMode ? 'white' : 'black',
+                           color: darkMode ? 'black' : 'white',
+                           
+                        },
+                        '&:active': {
+                           transform: 'scale(0.98)',
+                        },
+                         }}
+                     > <a href={live}>🖥️ <span style={{ marginRight: '10px' }}></span>Demo</a>
                      </Box>
-                     <Box px={1.2} py={0.5} border={darkMode ? '2px solid white' : '2px solid black'} borderRadius={'12px'} style={{ display: 'inline-block' }}>
-                        {"</>"}<IconLink link={source} title={'Source Code'} />
+
+                     <Box px={1.2} py={0.5}
+                        sx={{
+                           transition: 'transform 0.3s ease-in-out',
+                           border: darkMode ? '2px solid white' : '2px solid black',
+                           borderRadius: '12px',
+                           display: 'inline-block',
+                        '&:hover, &:hover a': {
+                           bgcolor: darkMode ? 'white' : 'black',
+                           color: darkMode ? 'black' : 'white',
+                           
+                        },
+                        '&:active': {
+                           transform: 'scale(0.98)',
+                        },
+                         }}
+                     >
+                        <a href={source}>
+                           {'</>'}
+                           <span style={{ marginRight: '10px' }} />
+                           Source Code
+                           </a>
                      </Box>
                   </div>
          </Box>
@@ -79,5 +113,6 @@ function PortfolioBlock({image, live, source, title, darkMode, techs}) {
       
    );
 }
+
 
 export default PortfolioBlock;
