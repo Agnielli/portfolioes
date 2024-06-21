@@ -9,7 +9,7 @@ import { faInstagram, faGithub, faLinkedin, faReact, faNodeJs, faHtml5, faBootst
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
 
-export let colors = ["#F5EE77", "#E16642"];
+export let colors = ["#8586ED", "#22E1B5"];
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);

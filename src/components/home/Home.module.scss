@@ -18,15 +18,6 @@ h2 {
   }
 }
 
-
-.hand {
-  animation-name: wave;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
 a {
   color: $dark;
   transition: color 200ms ease;
@@ -37,11 +28,6 @@ a:hover {
   transition: color 200ms ease;
 }
 
-.no-style-override {
-  cursor: default !important;
-  color: inherit !important;
-  text-decoration: none !important;
-}
 
 @keyframes wave {
   0% { transform: rotate( 0.0deg) }
