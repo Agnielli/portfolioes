@@ -3,7 +3,6 @@ import mock1 from "../img/mock1.avif"
 import mock2 from "../img/mock2.avif"
 import mock3 from "../img/mock3.avif"
 import mock4 from "../img/mock4.avif"
-import mock5 from "../img/mock5.avif"
 import mock6 from "../img/mock6.avif"
 import mock7 from "../img/mock7.avif"
 import { faInstagram, faGithub, faLinkedin, faReact, faNodeJs, faHtml5, faBootstrap} from '@fortawesome/free-brands-svg-icons'
@@ -60,12 +59,16 @@ export const info = {
         }
 
     ],
-    bio: "Hello! My name is Enrique and I’m a Software Developer at 18Techs a company from Atlanta, GA (USA). I honed my skills in Full Stack Development at the Socratech School of New Technologies and further expanded my knowledge through the ‘Modern Web Application Development’ course offered by the University of Helsinki. Among my licenses and certifications are - JavaScript Programming from Fundación Telefónica - English for IT B2 from Cisco Networking Academy - Mobile App Development Course from the Complutense University of Madrid - Computer Science 101 from Stanford University Online - CS50 Introduction to Computer Science from Harvard University Online. When I’m not coding, you can find me enjoying long walks on the beach and enjoying time with my family while volunteering in the community. I’m a firm believer that artificial intelligence will play a significant role in our future, perhaps even ruling us one day. If you’re looking for a developer who is always on the cutting edge of technology, then look no further. Hire me! Thank you, Payton Pierce, for inspiring my work and teaching me so much.",
+    bio: `Hello! My name is Enrique and I work remotely as a Software Developer at 18Techs and Dark POS, companies from Alpharetta, State of Georgia (USA) since January 2024. I honed my skills in Full Stack Development at the Socratech School of New Technologies and further expanded my knowledge through the ‘Modern Web Application Development’ course offered by the University of Helsinki. 
+    
+    Among my licenses and certifications are - JavaScript Programming from Fundación Telefónica - English for IT B2 from Cisco Networking Academy - Mobile App Development Course from the Complutense University of Madrid - Computer Science 101 from Stanford University Online - CS50 Introduction to Computer Science from Harvard University Online. 
+    
+    When I’m not coding, you can find me enjoying long walks on the beach and enjoying time with my family while volunteering in the community. I’m a firm believer that artificial intelligence will play a significant role in our future, perhaps even ruling us one day. If you’re looking for a developer who is always on the cutting edge of technology, then look no further. Hire me! Thank you, Payton Pierce, for inspiring my work and teaching me so much.`,
 
     skills:
         {
-            proficientWith: ['JavaScript', 'React', 'Git', 'Github', 'Express', 'Nodejs', 'Bootstrap', 'HTML5', 'CSS3', 'mySQL'],
-            exposedTo: ['React Native', 'Astro', 'Tailwind', 'PowerBI', 'MongoDB', 'Figma', 'Adobe Photoshop', 'C', 'Geist', 'Material-Ui']
+            proficientWith: ['JavaScript', 'React', 'Git', 'Github', 'Express', 'NodeJS', 'Bootstrap', 'HTML5', 'CSS3', 'mySQL',  'Adobe Photoshop'],
+            exposedTo: ['React Native', 'TypeScript', 'Astro', 'Tailwind', 'PowerBI', 'MongoDB', 'Figma', 'C', 'Geist', 'Material-Ui']
         }
     ,
     hobbies: [
@@ -130,10 +133,5 @@ export const info = {
             source: "https://github.com/Agnielli/Arkanoid",
             image: mock4
         },
-        // {
-        //     title: "Pedro Camacho",
-        //     techs: ["JavaScript", "HTML", "CSS"],
-        //     image: mock5
-        // }
     ]    
 }

@@ -72,7 +72,12 @@ export default function Home() {
                      aria-label="cheese"
                      role="img"
                      mr={{xs: '0.5rem', md: '1rem'}} fontSize={'1.5rem'}>💬</Box> 
-                     <a href="#" onClick={(e) => { e.preventDefault(); handleShow(); }}>
+                     <a href="#" 
+               style={{
+                  pointerEvents: 'none',
+                  color: 'inherit',
+                  textDecoration: 'none'
+               }} onClick={(e) => { e.preventDefault(); handleShow(); }}>
                         Send me a message
                      </a>
                </Box>

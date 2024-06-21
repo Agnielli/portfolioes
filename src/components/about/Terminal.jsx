@@ -7,9 +7,8 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons'
 
 
 
-function Terminal(props) {
-   const {text} = props;
-
+function Terminal({text}) {
+   
    return (
       <Box component={'section'} className={classNames(Style.terminal, Style.shadowed)}
            width={{xs: '80%', md: '50%'}} borderRadius={'0.5rem'} mb={'4rem'}>
