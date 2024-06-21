@@ -70,7 +70,7 @@ export default function Home() {
                <Box component={'li'} fontSize={'1rem'} lineHeight={1.5} 
                   style={{
                      cursor: 'default', 
-                     color: 'inherit',
+                     color: 'inherit!',
                      textDecoration: 'none'}}>
                   <Box component={'span'} 
                      aria-label="cheese"
