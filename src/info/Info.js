@@ -36,9 +36,9 @@ export const info = {
             text: "quiquesaba@gmail.com"
         },
         {
-            link: "https://www.18techs.com/",
+            link: "https://darkpos.com/",
             emoji: "💼",
-            text: "Web Developer at 18Techs"
+            text: "Web Developer at DARK POS"
         }
     ],
     socials: [
