@@ -8,23 +8,18 @@ import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
 
 export default function BaseLayout() {
-   let [darkMode, setDarkMode] = useState(true);
-
-   function handleToggleDarkMode() {
-      let oppositeOfCurrentDarkMode = !darkMode
-      localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`)
-      setDarkMode(oppositeOfCurrentDarkMode)
-   }
+   let [darkMode, setDarkMode] = useState(() => {
+      const savedMode = localStorage.getItem('darkMode');
+      return savedMode === null ? true : JSON.parse(savedMode);
+   });
 
    useEffect(() => {
-      let detectedDarkMode = eval(localStorage.getItem('darkMode'));
+      localStorage.setItem('darkMode', JSON.stringify(darkMode));
+   }, [darkMode]);
 
-      if (detectedDarkMode) {
-         setDarkMode(detectedDarkMode)
-      } else {
-         localStorage.setItem('darkMode', 'false')
-      }
-   }, [])
+   function handleToggleDarkMode() {
+      setDarkMode(prevMode => !prevMode);
+   }
 
    return (
       <Box className={darkMode ? Style.dark : Style.light}>
