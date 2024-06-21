@@ -57,10 +57,11 @@ export default function Home() {
             <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span>
             </h1>
             <h2>I'm {info.position}.</h2>
-            <Box component={'ul'} p={'0.8rem'} style={{
-                     cursor: 'default', 
-                     color: 'inherit!',
-                     textDecoration: 'none'}}>
+            <Box 
+               component={'ul'} 
+               p={'0.8rem'} 
+               className='no-style-override'
+            >
                {info.miniBio.map((bio, index) => (
                   <EmojiBullet 
                      key={index} 

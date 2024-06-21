@@ -5,7 +5,7 @@ import mock3 from "../img/mock3.avif"
 import mock4 from "../img/mock4.avif"
 import mock6 from "../img/mock6.avif"
 import mock7 from "../img/mock7.avif"
-import { faInstagram, faGithub, faLinkedin, faReact, faNodeJs, faHtml5, faBootstrap} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faGithub, faLinkedin, faReact, faNodeJs, faHtml5, faBootstrap, faGitlabSquare} from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -53,9 +53,9 @@ export const info = {
             label: 'linkedin'
         },
         {
-            link: "https://www.instagram.com/e.sabariego/",
-            icon: faInstagram,
-            label: 'instagram'
+            link: "https://gitlab.com/quiquesaba",
+            icon: faGitlabSquare,
+            label: 'gitlab'
         }
 
     ],

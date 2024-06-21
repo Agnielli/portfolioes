@@ -37,6 +37,12 @@ a:hover {
   transition: color 200ms ease;
 }
 
+.no-style-override {
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 @keyframes wave {
   0% { transform: rotate( 0.0deg) }
   10% { transform: rotate(14.0deg) }

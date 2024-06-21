@@ -7,15 +7,25 @@ function EmojiBullet({emoji, text, link, id }) {
     return (
         <Box>
           {id === 3 ? 
-            <Box component={'li'} fontSize={'1rem'} lineHeight={1.5} style={{cursor: 'default'}}>
+            <Box component={'li'} fontSize={'1rem'} lineHeight={1.5} style={{cursor: 'default', 
+              color: 'inherit',
+              textDecoration: 'none'}}>
               <Box component={'span'} 
               aria-label="cheese"
               role="img"
               mr={{xs: '0.5rem', md: '1rem'}} fontSize={'1.5rem'}>{emoji}</Box> 
-                 <a target="_blank"
-              rel="noopener noreferrer" href={link}>
-              {text}
-          </a>
+                 <a 
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    href={link}
+                    style={{
+                      color: 'inherit',
+                      textDecoration: 'none',
+                      transition: 'color 0ms ease'
+                    }}
+                  >
+                    {text}
+                  </a>
             </Box>
           : 
             <Box fontSize={'1rem'} lineHeight={1.5} style={{cursor: 'default'}}>
