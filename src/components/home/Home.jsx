@@ -67,17 +67,20 @@ export default function Home() {
                      link={bio.link}
                   />
                ))}
-               <Box component={'li'} fontSize={'1rem'} lineHeight={1.5} style={{cursor: 'default'}}>
+               <Box component={'li'} fontSize={'1rem'} lineHeight={1.5} 
+                  style={{
+                     cursor: 'default', 
+                     color: 'inherit',
+                     textDecoration: 'none'}}>
                   <Box component={'span'} 
                      aria-label="cheese"
                      role="img"
                      mr={{xs: '0.5rem', md: '1rem'}} fontSize={'1.5rem'}>💬</Box> 
                      <a href="#" 
-               style={{
-                  pointerEvents: 'none',
-                  color: 'inherit',
-                  textDecoration: 'none'
-               }} onClick={(e) => { e.preventDefault(); handleShow(); }}>
+                        style={{
+                           color: 'inherit',
+                           textDecoration: 'none'
+                        }} onClick={(e) => { e.preventDefault(); handleShow(); }}>
                         Send me a message
                      </a>
                </Box>
