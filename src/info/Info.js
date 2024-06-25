@@ -24,22 +24,18 @@ export const info = {
     baseColor: colors[0],
     miniBio: [
         {
-            emoji: '☕',
-            text: 'Fueled by tea'
-        },
-        {
             emoji: '🌍',
             text: 'Based in Garrucha, Almería (Spain)'
-        },
-        {
-            emoji: "📧",
-            text: "quiquesaba@gmail.com"
         },
         {
             link: "https://darkpos.com/",
             emoji: "💼",
             text: "Web Developer at DARK POS"
-        }
+        },
+        {
+            emoji: "📧",
+            text: "quiquesaba@gmail.com"
+        },
     ],
     socials: [
         {
