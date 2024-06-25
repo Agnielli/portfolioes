@@ -19,8 +19,7 @@ const links = [
     {
         name: info.initials,
         type: 'initials',
-        to: '/',
-        active: 'home'
+        style: { cursor: 'default' }
     },
     {
         name: 'Portfolio',
@@ -42,10 +41,17 @@ export default function Navbar({darkMode, handleClick}) {
                 {links.map((link, index) => (
                     <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
                          sx={{borderImageSource: info.gradient}}>
-                        <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
-                            {!link.type && <p style={{padding: '1rem 0', margin: 0}}>{link.name}</p>}
-                            {link.type && <h1>{link.name}</h1>}
-                        </Link>
+                        {link.to ? (
+                            <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
+                                {!link.type && <p style={{padding: '1rem 0', margin: 0}}>{link.name}</p>}
+                                {link.type && <h1>{link.name}</h1>}
+                            </Link>
+                        ) : (
+                            <span style={link.style}>
+                                {link.type && <h1>{link.name}</h1>}
+                                {!link.type && <p style={{padding: '1rem 0', margin: 0}}>{link.name}</p>}
+                            </span>
+                        )}
                     </Box>
                 ))}
                 <li>
