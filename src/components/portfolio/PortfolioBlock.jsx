@@ -81,7 +81,13 @@ function PortfolioBlock({image, live, source, title, darkMode, setDarkMode, tech
                            transform: 'scale(0.98)',
                         },
                          }}
-                     > <a href={live}>🖥️ <span style={{ marginRight: '10px' }}></span>Demo</a>
+                     > 
+                     <a  
+                        href={live} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                     >
+                        🖥️ <span style={{ marginRight: '10px' }}></span>Demo</a>
                      </Box>
 
                      <Box px={1.2} py={0.5}
@@ -100,11 +106,15 @@ function PortfolioBlock({image, live, source, title, darkMode, setDarkMode, tech
                         },
                          }}
                      >
-                        <a href={source}>
+                        <a 
+                           href={source} 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                        >
                            {'</>'}
                            <span style={{ marginRight: '10px' }} />
                            Source Code
-                           </a>
+                        </a>
                      </Box>
                   </div>
          </Box>
