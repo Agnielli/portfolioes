@@ -1,47 +1,44 @@
-import React from 'react';
-import {Box} from "@mui/material";
+import { Box } from "@mui/material";
 
-function EmojiBullet({emoji, text, link, id }) {
-    
+export const EmojiBullet = ({ emoji, text, link, id, onClick }) => {
+  const commonBoxStyles = {
+    fontSize: '1rem',
+    lineHeight: 1.5,
+    cursor: 'default'
+  };
 
-    return (
-        <Box>
-          {id === 3 ? 
-            <Box component={'li'} fontSize={'1rem'} lineHeight={1.5} style={{cursor: 'default', 
-              color: 'inherit',
-              textDecoration: 'none'}}>
-              <Box component={'span'} 
-              aria-label="cheese"
-              role="img"
-              mr={{xs: '0.5rem', md: '1rem'}} fontSize={'1.5rem'}>{emoji}</Box> 
-                 <a 
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    href={link}
-                    style={{
-                      color: 'inherit',
-                      textDecoration: 'none',
-                      transition: 'color 0ms ease'
-                    }}
-                  >
-                    {text}
-                  </a>
-            </Box>
-          : 
-            <Box fontSize={'1rem'} lineHeight={1.5} style={{cursor: 'default'}}>
-              <Box component={'span'} 
-              aria-label="cheese"
-              role="img"
-              mr={{xs: '0.5rem', md: '1rem'}} fontSize={'1.5rem'}>{emoji}</Box> 
-                <a target="_blank"
-              rel="noopener noreferrer" href={link}>
-              {text}
-          </a>
-            </Box>
-          }
-          
-        </Box>
-      );
-}
+  const commonLinkStyles = {
+    color: 'inherit',
+    textDecoration: 'none',
+    transition: 'color 0.3s ease'
+  };
 
-export default EmojiBullet;
+  const handleClick = (e) => {
+    if (onClick) {
+      e.preventDefault();
+      onClick(e);
+    }
+  };
+
+  return (
+    <Box component="li" sx={commonBoxStyles}>
+      <Box
+        component="span"
+        aria-label={emoji}
+        role="img"
+        mr={{ xs: '0.5rem', md: '1rem' }}
+        fontSize="1.5rem"
+      >
+        {emoji}
+      </Box>
+      <a 
+        href={link || "#"}
+        onClick={handleClick}
+        style={commonLinkStyles}
+        {...(link && { target: "_blank", rel: "noopener noreferrer" })}
+      >
+        {text}
+      </a>
+    </Box>
+  );
+};

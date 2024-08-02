@@ -1,10 +1,4 @@
-import self from "../img/self.png"
-import mock1 from "../img/mock1.avif"
-import mock2 from "../img/mock2.avif"
-import mock3 from "../img/mock3.avif"
-import mock4 from "../img/mock4.avif"
-import mock6 from "../img/mock6.avif"
-import mock7 from "../img/mock7.avif"
+import { mock1, mock2, mock3, mock4, mock6, mock7, self } from '../img';
 import { faInstagram, faGithub, faLinkedin, faReact, faNodeJs, faHtml5, faBootstrap, faGitlabSquare} from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 

@@ -1,9 +1,10 @@
-import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
-export const ContactModal = ({form, sendEmail, show, handleClose}) => {
+
+export const ContactModal = ({form, sendEmail, show, handleClose, handleSubmit}) => {
+
   return (
     <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -36,7 +37,7 @@ export const ContactModal = ({form, sendEmail, show, handleClose}) => {
               <Button className="btn-dark" onClick={handleClose}>
                 Close
               </Button>
-              <Button className="btn-dark" onClick={sendEmail}>
+              <Button className="btn-dark" onClick={handleSubmit}>
                 Send message
               </Button>
         </Modal.Footer>
